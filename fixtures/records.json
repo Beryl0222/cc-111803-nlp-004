@@ -1,14 +1,17 @@
 [
-  {
-    "record_id": "wire-31",
-    "source": "wire-a",
-    "revision": 1,
-    "text": "海州市港区事故发生于 4 月 12 日，现场负责人为林岳。"
-  },
-  {
-    "record_id": "correction-31",
-    "source": "wire-a",
-    "revision": 2,
-    "text": "更正：事故发生于 4 月 13 日，其他信息不变。"
-  }
+  [
+    "wire-32",
+    "wire-b",
+    "4 月 13 日，海州市北岸码头的清点作业暂停，现场负责人为乔骁。"
+  ],
+  [
+    "interview-18",
+    "reporter-interview",
+    "林岳说：“我当晚在海州内港，北岸码头那边的情况我不清楚。”"
+  ],
+  [
+    "topic-16",
+    "topic-page",
+    "林岳：“我当晚在海州内港。”此前有通讯稿报道港区作业在 12 日暂停。"
+  ]
 ]

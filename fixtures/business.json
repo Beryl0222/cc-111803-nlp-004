@@ -1,0 +1,37 @@
+{
+  "channel": "专题页",
+  "wires": [
+    {
+      "ref": "wire-31",
+      "channels": [
+        "网站",
+        "专题页"
+      ]
+    },
+    {
+      "ref": "wire-32",
+      "channels": [
+        "网站"
+      ]
+    },
+    {
+      "ref": "interview-18",
+      "channels": [
+        "网站",
+        "专题页"
+      ]
+    }
+  ],
+  "published": [
+    {
+      "id": "flash-41",
+      "wire": "wire-31",
+      "channel": "网站"
+    },
+    {
+      "id": "topic-16",
+      "wire": "wire-31",
+      "channel": "专题页"
+    }
+  ]
+}
