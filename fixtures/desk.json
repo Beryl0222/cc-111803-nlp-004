@@ -1,0 +1,24 @@
+{
+  "channel_min_desks": {"网站快讯": 1, "供稿": 2},
+  "wires": [
+    {"id": "dock-17", "edition": 1, "desk": "港区记者", "text": "北岸码头暂停清点。林岳确认暂停只涉及北岸。"},
+    {"id": "dock-17", "edition": 2, "desk": "港区记者", "text": "北岸码头暂停清点。作业区随后恢复清点。"},
+    {"id": "station-4", "edition": 1, "desk": "现场值班室", "text": "北岸码头暂停清点。原因正在核实。"},
+    {"id": "conversation-9", "edition": 1, "desk": "驻点采访", "text": "我当晚在海州内港。", "speaker": "林岳"}
+  ],
+  "claims": [
+    {"id": "paused", "text": "北岸码头的清点工作一度中断。", "clips": [
+      {"wire_id": "dock-17", "edition": 1, "start": 0, "end": 9, "text": "北岸码头暂停清点。", "kind": "report"},
+      {"wire_id": "station-4", "edition": 1, "start": 0, "end": 9, "text": "北岸码头暂停清点。", "kind": "report"}
+    ]},
+    {"id": "presence", "text": "我当晚在海州内港。", "named_quote": true, "clips": [
+      {"wire_id": "conversation-9", "edition": 1, "start": 0, "end": 9, "text": "我当晚在海州内港。", "kind": "quote", "speaker": "林岳"}
+    ]}
+  ],
+  "slots": [
+    {"id": "flash-41", "channel": "网站快讯", "claim_ids": ["paused", "presence"]},
+    {"id": "feed-13", "channel": "供稿", "claim_ids": ["paused"]},
+    {"id": "feed-14", "channel": "供稿", "claim_ids": ["presence"]}
+  ],
+  "publication_log": [{"slot_id": "flash-41", "release_id": "20261118-flash"}, {"slot_id": "feed-13", "release_id": "20261118-feed"}]
+}
