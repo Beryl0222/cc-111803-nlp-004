@@ -1,0 +1,14 @@
+[
+  {
+    "record_id": "wire-31",
+    "source": "wire-a",
+    "revision": 1,
+    "text": "海州市港区事故发生于 4 月 12 日，现场负责人为林岳。"
+  },
+  {
+    "record_id": "correction-31",
+    "source": "wire-a",
+    "revision": 2,
+    "text": "更正：事故发生于 4 月 13 日，其他信息不变。"
+  }
+]
