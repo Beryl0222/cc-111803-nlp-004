@@ -1,17 +1,20 @@
 [
-  [
-    "wire-32",
-    "wire-b",
-    "4 月 13 日，海州市北岸码头的清点作业暂停，现场负责人为乔骁。"
-  ],
-  [
-    "interview-18",
-    "reporter-interview",
-    "林岳说：“我当晚在海州内港，北岸码头那边的情况我不清楚。”"
-  ],
-  [
-    "topic-16",
-    "topic-page",
-    "林岳：“我当晚在海州内港。”此前有通讯稿报道港区作业在 12 日暂停。"
-  ]
+  {
+    "record_id": "wire-32",
+    "source": "wire-b",
+    "revision": 1,
+    "text": "4 月 13 日，海州市北岸码头的清点作业暂停，现场负责人为乔骁。"
+  },
+  {
+    "record_id": "interview-18",
+    "source": "reporter-interview",
+    "revision": 1,
+    "text": "林岳说：“我当晚在海州内港，北岸码头那边的情况我不清楚。”"
+  },
+  {
+    "record_id": "topic-16",
+    "source": "topic-page",
+    "revision": 1,
+    "text": "林岳：“我当晚在海州内港。”此前有通讯稿报道港区作业在 12 日暂停。"
+  }
 ]
