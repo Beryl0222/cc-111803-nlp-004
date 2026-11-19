@@ -22,6 +22,9 @@ class EditionDesk:
         slot = self.slots[slot_id]
         return [self.review.check(self.claims[claim_id], slot.channel) for claim_id in slot.claim_ids]
 
+    def published_for_slot(self, slot_id):
+        return [packet for packet in self._published.values() if packet['slot']['id'] == slot_id]
+
     def publish(self, slot_id, release_id):
         if release_id in self._published:
             raise ValueError(f'刊发编号已使用：{release_id}')

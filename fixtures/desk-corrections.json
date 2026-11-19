@@ -1,0 +1,338 @@
+{
+  "channel_min_desks": {
+    "网站快讯": 1,
+    "供稿": 2,
+    "专题页": 1
+  },
+  "correction_columns": {
+    "网站快讯": "快讯更正",
+    "供稿": "供稿更正",
+    "专题页": "专题页更正"
+  },
+  "wires": [
+    {
+      "id": "dock-17",
+      "edition": 1,
+      "desk": "港区记者",
+      "text": "北岸码头清点作业于 12 日 9 时暂停。林岳说：“我当晚在海州内港。”",
+      "occurred_at": "11月12日"
+    },
+    {
+      "id": "wire-31",
+      "edition": 1,
+      "desk": "通讯社",
+      "text": "北岸码头清点作业于 12 日 9 时暂停。",
+      "origin": "通讯社"
+    },
+    {
+      "id": "rep-31",
+      "edition": 1,
+      "desk": "合作站",
+      "text": "北岸码头清点作业于 12 日 9 时暂停。",
+      "origin": "通讯社"
+    },
+    {
+      "id": "station-4",
+      "edition": 1,
+      "desk": "现场值班室",
+      "text": "北岸码头清点作业于 12 日 9 时暂停。"
+    },
+    {
+      "id": "south-5",
+      "edition": 1,
+      "desk": "乙社",
+      "text": "南岸码头清点作业于 12 日 9 时暂停。",
+      "occurred_at": "11月12日"
+    },
+    {
+      "id": "talk-9",
+      "edition": 1,
+      "desk": "驻点采访",
+      "text": "我当晚在海州内港。",
+      "speaker": "林岳"
+    },
+    {
+      "id": "talk-10",
+      "edition": 1,
+      "desk": "电话回访",
+      "text": "我当晚在海州内港。",
+      "speaker": "林岳"
+    },
+    {
+      "id": "notice-6",
+      "edition": 1,
+      "desk": "夜班编辑",
+      "text": "南岸码关临时关闭。"
+    },
+    {
+      "id": "weather-1",
+      "edition": 1,
+      "desk": "气象组",
+      "text": "海州市气象台发布大风蓝色预警。"
+    },
+    {
+      "id": "weather-2",
+      "edition": 1,
+      "desk": "气象组",
+      "text": "海州市气象台发布大风蓝色预警。"
+    }
+  ],
+  "claims": [
+    {
+      "id": "combined",
+      "text": "北岸码头清点暂停，林岳当晚在海州内港。",
+      "clips": [],
+      "facts": [
+        {
+          "id": "scope",
+          "text": "北岸码头清点暂停。",
+          "role": "fact",
+          "clips": [
+            {
+              "wire_id": "dock-17",
+              "edition": 1,
+              "start": 0,
+              "end": 21,
+              "text": "北岸码头清点作业于 12 日 9 时暂停。",
+              "kind": "report",
+              "speaker": null,
+              "supports": "original"
+            },
+            {
+              "wire_id": "wire-31",
+              "edition": 1,
+              "start": 0,
+              "end": 21,
+              "text": "北岸码头清点作业于 12 日 9 时暂停。",
+              "kind": "report",
+              "speaker": null,
+              "supports": "original"
+            },
+            {
+              "wire_id": "rep-31",
+              "edition": 1,
+              "start": 0,
+              "end": 21,
+              "text": "北岸码头清点作业于 12 日 9 时暂停。",
+              "kind": "report",
+              "speaker": null,
+              "supports": "original"
+            }
+          ]
+        },
+        {
+          "id": "presence",
+          "text": "我当晚在海州内港。",
+          "named_quote": true,
+          "speaker": "林岳",
+          "role": "fact",
+          "clips": [
+            {
+              "wire_id": "talk-9",
+              "edition": 1,
+              "start": 0,
+              "end": 9,
+              "text": "我当晚在海州内港。",
+              "kind": "quote",
+              "speaker": "林岳",
+              "supports": "original"
+            },
+            {
+              "wire_id": "talk-10",
+              "edition": 1,
+              "start": 0,
+              "end": 9,
+              "text": "我当晚在海州内港。",
+              "kind": "quote",
+              "speaker": "林岳",
+              "supports": "original"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brief-copy",
+      "text": "北岸码头清点暂停。",
+      "clips": [
+        {
+          "wire_id": "wire-31",
+          "edition": 1,
+          "start": 0,
+          "end": 21,
+          "text": "北岸码头清点作业于 12 日 9 时暂停。",
+          "kind": "report",
+          "speaker": null,
+          "supports": "original"
+        }
+      ]
+    },
+    {
+      "id": "south-copy",
+      "text": "南岸码头清点暂停。",
+      "clips": [
+        {
+          "wire_id": "south-5",
+          "edition": 1,
+          "start": 0,
+          "end": 21,
+          "text": "南岸码头清点作业于 12 日 9 时暂停。",
+          "kind": "report",
+          "speaker": null,
+          "supports": "original"
+        }
+      ]
+    },
+    {
+      "id": "typo-copy",
+      "text": "南岸码头临时关闭。",
+      "clips": [
+        {
+          "wire_id": "notice-6",
+          "edition": 1,
+          "start": 0,
+          "end": 9,
+          "text": "南岸码关临时关闭。",
+          "kind": "report",
+          "speaker": null,
+          "supports": "original"
+        }
+      ]
+    },
+    {
+      "id": "weather-copy",
+      "text": "海州市气象台发布大风蓝色预警。",
+      "clips": [
+        {
+          "wire_id": "weather-1",
+          "edition": 1,
+          "start": 0,
+          "end": 15,
+          "text": "海州市气象台发布大风蓝色预警。",
+          "kind": "report",
+          "speaker": null,
+          "supports": "original"
+        },
+        {
+          "wire_id": "weather-2",
+          "edition": 1,
+          "start": 0,
+          "end": 15,
+          "text": "海州市气象台发布大风蓝色预警。",
+          "kind": "report",
+          "speaker": null,
+          "supports": "original"
+        }
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "id": "flash-41",
+      "channel": "网站快讯",
+      "claim_ids": [
+        "combined"
+      ]
+    },
+    {
+      "id": "feed-13",
+      "channel": "供稿",
+      "claim_ids": [
+        "combined"
+      ]
+    },
+    {
+      "id": "brief-77",
+      "channel": "网站快讯",
+      "claim_ids": [
+        "brief-copy"
+      ]
+    },
+    {
+      "id": "topic-66",
+      "channel": "专题页",
+      "claim_ids": [
+        "south-copy"
+      ]
+    },
+    {
+      "id": "brief-88",
+      "channel": "网站快讯",
+      "claim_ids": [
+        "typo-copy"
+      ]
+    },
+    {
+      "id": "weather-3",
+      "channel": "网站快讯",
+      "claim_ids": [
+        "weather-copy"
+      ]
+    }
+  ],
+  "publication_log": [
+    {
+      "slot_id": "flash-41",
+      "release_id": "20261118-flash"
+    },
+    {
+      "slot_id": "feed-13",
+      "release_id": "20261118-feed"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "notice-1",
+      "text": "上一条稿件关于停运范围的说法有误，暂停的是北岸码头，不是整个港区。",
+      "replacement": "北岸码头清点作业于 12 日 9 时暂停清点。"
+    },
+    {
+      "id": "notice-2",
+      "text": "上一条稿件引述林岳的话有误，他没有说过“我当晚在海州内港”。",
+      "op": "retraction",
+      "target": {
+        "wire_id": "talk-9",
+        "edition": 1,
+        "start": 0,
+        "end": 9,
+        "text": "我当晚在海州内港。",
+        "claim_id": "combined",
+        "fact_id": "presence"
+      }
+    },
+    {
+      "id": "notice-3",
+      "text": "上一条稿件把暂停日期写成 12 日，应为 13 日。",
+      "op": "correction",
+      "replacement": "北岸码头清点作业于 13 日 9 时暂停。",
+      "target": {
+        "wire_id": "dock-17",
+        "edition": 1,
+        "start": 0,
+        "end": 21,
+        "text": "北岸码头清点作业于 12 日 9 时暂停。",
+        "claim_id": "combined",
+        "fact_id": "scope"
+      }
+    },
+    {
+      "id": "notice-4",
+      "text": "上一条稿件里关于清点作业和受访者所在地的说法有误。"
+    },
+    {
+      "id": "notice-5",
+      "text": "上一条稿件“南岸码关”中的“关”系手误，应为“头”。",
+      "op": "typo",
+      "replacement": "南岸码头临时关闭。",
+      "target": {
+        "wire_id": "notice-6",
+        "edition": 1,
+        "start": 0,
+        "end": 9,
+        "text": "南岸码关临时关闭。",
+        "claim_id": "typo-copy",
+        "fact_id": null
+      }
+    }
+  ]
+}
