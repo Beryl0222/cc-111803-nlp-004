@@ -1,0 +1,65 @@
+{
+  "channel_min_desks": {"网站快讯": 1, "供稿": 2},
+  "wires": [
+    {"id": "dock-17", "edition": 1, "desk": "港区记者", "source": "港区通讯",
+     "text": "北岸码头暂停清点。林岳确认暂停只涉及北案。12日南岸码头也曾短暂停运。"},
+    {"id": "dock-17", "edition": 2, "desk": "港区记者", "source": "港区通讯",
+     "text": "北岸码头暂停清点。林岳确认暂停只涉及北岸。12日南岸码头并未停运。"},
+    {"id": "station-4", "edition": 1, "desk": "现场值班室", "source": "值班室",
+     "text": "12日北岸码头暂停清点。原因正在核实。"},
+    {"id": "relay-8", "edition": 1, "desk": "沿海合作站", "source": "港区通讯",
+     "text": "北岸码头暂停清点。"},
+    {"id": "conversation-9", "edition": 1, "desk": "驻点采访", "source": "驻点采访",
+     "text": "我当晚在海州内港。", "speaker": "林岳"},
+    {"id": "press-21", "edition": 1, "desk": "新闻稿", "source": "新闻稿",
+     "text": "乔骁说：“我当晚在海州内港。”", "speaker": "乔骁"},
+    {"id": "interview-20", "edition": 1, "desk": "驻点采访", "source": "驻点采访",
+     "text": "林岳说：“如果北岸码头停运，我当晚会在海州内港。”", "speaker": "林岳"},
+    {"id": "south-19", "edition": 1, "desk": "南岸通讯员", "source": "南岸通讯员",
+     "text": "南岸码头当日未停运。负责人乔骁称清点照常。"}
+  ],
+  "claims": [
+    {"id": "paused", "text": "北岸码头暂停清点。", "clips": [
+      {"wire_id": "dock-17", "edition": 1, "start": 0, "end": 9, "text": "北岸码头暂停清点。", "kind": "report"},
+      {"wire_id": "station-4", "edition": 1, "start": 3, "end": 12, "text": "北岸码头暂停清点。", "kind": "report"}
+    ]},
+    {"id": "scope", "text": "暂停只涉及北岸", "clips": [
+      {"wire_id": "dock-17", "edition": 1, "start": 13, "end": 20, "text": "暂停只涉及北案", "kind": "report"}
+    ]},
+    {"id": "presence", "text": "我当晚在海州内港。", "named_quote": true, "clips": [
+      {"wire_id": "conversation-9", "edition": 1, "start": 0, "end": 9, "text": "我当晚在海州内港。", "kind": "quote", "speaker": "林岳"}
+    ]},
+    {"id": "compound", "text": "林岳当晚在海州内港，北岸码头一度暂停清点。", "statements": [
+       {"id": "whose", "text": "林岳当晚在海州内港。", "kind": "identity"},
+       {"id": "stopped", "text": "北岸码头一度暂停清点。", "kind": "fact"}
+     ], "clips": [
+      {"wire_id": "conversation-9", "edition": 1, "start": 0, "end": 9, "text": "我当晚在海州内港。", "kind": "quote", "speaker": "林岳", "statement_id": "whose"},
+      {"wire_id": "station-4", "edition": 1, "start": 3, "end": 12, "text": "北岸码头暂停清点。", "kind": "report", "statement_id": "stopped"}
+    ]}
+  ],
+  "slots": [
+    {"id": "flash-41", "channel": "网站快讯", "claim_ids": ["paused", "presence"]},
+    {"id": "feed-13", "channel": "供稿", "claim_ids": ["paused"]},
+    {"id": "feed-14", "channel": "供稿", "claim_ids": ["presence"]},
+    {"id": "feed-15", "channel": "供稿", "claim_ids": ["compound"]},
+    {"id": "topic-16", "channel": "网站快讯", "claim_ids": ["scope"]}
+  ],
+  "publication_log": [
+    {"slot_id": "flash-41", "release_id": "20261118-flash"},
+    {"slot_id": "feed-13", "release_id": "20261118-feed"},
+    {"slot_id": "topic-16", "release_id": "20261118-topic"}
+  ],
+  "partner_log": [
+    {"release_id": "20261118-feed", "partner": "沿海合作站",
+     "text": ["北岸码头暂停清点。"]}
+  ],
+  "notices": [
+    {"id": "notice-vague", "kind": "correction", "scope": "fact",
+     "text": "上一条稿件关于停运范围和受访者的说法有误", "place": "北岸码头"},
+    {"id": "notice-typo", "kind": "correction", "scope": "fact",
+     "wire_id": "dock-17", "edition": 1, "start": 13, "end": 20,
+     "quote": "暂停只涉及北案", "amended": "暂停只涉及北岸",
+     "revised_wire_id": "dock-17", "revised_edition": 2,
+     "revision_kind": "typo"}
+  ]
+}
